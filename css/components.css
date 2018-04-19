@@ -648,3 +648,54 @@ body,
   content: "/";
   margin: 0 5px;
 }
+
+.Box {
+  background-color: #fff;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.Box + .Box {
+  margin-top: 20px;
+}
+
+.Box .Box-body,
+.Box .Box-footer {
+  padding: 15px 15px;
+}
+
+.Box.Box--fixedHeight {
+  padding-top: 54;
+}
+
+.Box.Box--fixedHeight,
+.Box.Box--fixedHeight .Box-header,
+.Box.Box--fixedHeight .Box-footer {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.Box.Box--fixedHeight .Box-header,
+.Box.Box--fixedHeight .Box-footer {
+  overflow: auto;
+}
+
+.Box.Box--fixedHeight .Box-body {
+  height: 100%;
+  overflow: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.Box.Box--fixedHeight .Box-header {
+  height: 54;
+  margin-top: -54;
+}
