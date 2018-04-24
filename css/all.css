@@ -432,10 +432,7 @@ body,
 
 .Page-sidebar,
 .Page-header {
-  font-size: 14px;
   font-family: "Helvetica Neue", Helvetica, Arial, "Pingfang SC", "Microsoft Yahei", Sans-serif;
-  font-weight: 300;
-  line-height: 1.5;
 }
 
 .Page-sidebar ul,
@@ -456,6 +453,8 @@ body,
   float: left;
   width: 220px;
   background-color: transparent;
+  font-size: 14px;
+  font-weight: 300;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -463,7 +462,7 @@ body,
 
 .Sidebar .Navs > ul > li > a {
   display: block;
-  color: inherit;
+  color: #333;
   -webkit-transition: background-color 0.3s;
   -moz-transition: background-color 0.3s;
   -o-transition: background-color 0.3s;
@@ -471,12 +470,13 @@ body,
 }
 
 .Sidebar .Navs > ul > li > a:hover {
-  color: inherit;
+  color: #333;
   background-color: transparent;
 }
 
 .Sidebar-navs {
-  font-size: 14px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .Sidebar-navs > ul > li > a {
@@ -529,7 +529,6 @@ body,
 }
 
 .Sidebar-navs > ul > li > .Navs a {
-  font-weight: 300;
   padding: 7px 10px 7px 59px;
   line-height: 22px;
   word-wrap: break-word;
@@ -676,8 +675,12 @@ body,
   position: relative;
   z-index: 99;
   overflow: visible !important;
+  padding-right: 0;
+  padding-left: 0;
   border-bottom: 0 solid transparent;
   background-color: transparent;
+  font-size: 14px;
+  font-weight: 300;
   *zoom: 1;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -751,20 +754,17 @@ body,
   border-style: none;
   line-height: 1;
   font-size: 18px;
-  color: inherit;
+  color: #333;
   background-color: transparent;
 }
 
-.Header-brand {
-  margin-left: 5px;
-}
-
 .Header-brand a {
-  display: block;
   position: relative;
+  display: block;
   font-size: 22px;
   font-weight: inherit;
   line-height: 1.1;
+  color: #333;
 }
 
 .Header-brand a:before {
@@ -789,7 +789,6 @@ body,
 }
 
 .Header-brand a img {
-  width: 122.88px;
   height: 24px;
   max-height: 100%;
 }
@@ -802,17 +801,12 @@ body,
 .Header-brand a img + span:before {
   content: " ";
   width: 1px;
-  background-color: inherit;
+  background-color: #333;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 10px;
   right: auto;
-}
-
-.Header-brand a span {
-  padding-left: 10px;
-  color: inherit;
 }
 
 .Header-brand + .Header-navs {
@@ -880,7 +874,7 @@ body,
 .Header-action .Action-trigger.fa {
   width: 18px;
   font-size: 18px;
-  color: inherit;
+  color: #333;
 }
 
 .Header-action button.Action-trigger {
