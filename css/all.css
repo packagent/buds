@@ -782,7 +782,6 @@ body {
 
 .Header-brand a img + span {
   position: relative;
-  padding-left: 21px;
 }
 
 .Header-brand a img + span:before {

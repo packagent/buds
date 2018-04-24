@@ -51,8 +51,8 @@ $page-brand-font-size: 22px !default;
 $page-brand-font-weight: inherit !default;
 $page-brand-text-color: $text-color !default;
 $page-brand-bg-color: transparent !default;
-$page-brand-separator-color: $page-brand-text-color !default;
-$page-brand-separator-gap: 21px !default;
+$page-brand-separator-color: transparent !default;
+$page-brand-separator-gap: 0 !default;
 $page-brand-separator-offset: 10px !default;
 
 $page-navbar-avatar-size: 30px !default;
