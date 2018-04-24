@@ -784,17 +784,6 @@ body {
   position: relative;
 }
 
-.Header-brand a img + span:before {
-  content: " ";
-  width: 1px;
-  background-color: #333;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 10px;
-  right: auto;
-}
-
 .Header-brand + .Header-navs {
   margin-left: 50px;
 }
