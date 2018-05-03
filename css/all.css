@@ -1,3 +1,4 @@
+@charset "UTF-8";
 
 
 
@@ -1074,6 +1075,156 @@ body {
 .Box--fixedHeight .Box-header {
   height: 54;
   margin-top: -54;
+}
+
+.Figure {
+  position: relative;
+  text-align: center;
+  background-color: #a6a6a6;
+}
+
+.Figure,
+.Figure:not(.Figure--add) > div {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+}
+
+.Figure:not(.Figure--add) > div, .Figure.Figure--add {
+  position: relative;
+  overflow: hidden;
+}
+
+.Figure:not(.Figure--add) > div:after, .Figure.Figure--add:after {
+  content: " ";
+  display: block;
+  position: relative;
+  z-index: -999999999;
+  padding-top: 75%;
+}
+
+.Figure:not(.Figure--add) > div > *, .Figure.Figure--add > * {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.Figure.is-nongraphic a > img {
+  display: none;
+}
+
+.Figure.is-nongraphic a:after {
+  content: attr(data-file-ext);
+}
+
+.Figure a[href=""]:after,
+.Figure a[href="#"]:after,
+.Figure a[href^="javascript"]:after,
+.Figure.is-nongraphic a:after {
+  font-size: 24px;
+  font-weight: normal;
+  color: #666;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+
+.Figure a:before {
+  content: " ";
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  width: 0;
+  height: 100%;
+}
+
+.Figure a > img {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+
+.Figure a[href=""], .Figure a[href="#"], .Figure a[href^="javascript"] {
+  cursor: default;
+}
+
+.Figure a[href=""] > img, .Figure a[href="#"] > img, .Figure a[href^="javascript"] > img {
+  display: none;
+}
+
+.Figure a[href=""]:after, .Figure a[href="#"]:after, .Figure a[href^="javascript"]:after {
+  content: "暂无图片";
+}
+
+.Figure img {
+  max-height: 100%;
+}
+
+.Figure figcaption {
+  font-size: 12px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5px 5px;
+  -webkit-border-radius: 0 0 6px 6px;
+  -moz-border-radius: 0 0 6px 6px;
+  -ms-border-radius: 0 0 6px 6px;
+  -o-border-radius: 0 0 6px 6px;
+  border-radius: 0 0 6px 6px;
+}
+
+figure.Figure {
+  z-index: 2;
+  margin: 0;
+}
+
+.ImageList, .ImageList:before, .ImageList:after,
+.ImageList *,
+.ImageList *:before,
+.ImageList *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.ImageList-group {
+  margin-right: -15px;
+  margin-left: -15px;
+  *zoom: 1;
+}
+
+.ImageList-group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.ImageList-group + .ImageList-group {
+  margin-top: 15px;
+}
+
+.ImageList-item {
+  float: left;
+  width: 33.33333%;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 
